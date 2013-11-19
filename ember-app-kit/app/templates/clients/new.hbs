@@ -1,0 +1,7 @@
+<form class="form-horizontal" {{action "save" on="submit"}}>
+
+  <label>Subdomain</label>
+  {{view Ember.TextField valueBinding="subdomain" id="subdomain" placeholder="Subdomain" required="true"}}
+
+  <button type="submit" class="btn">Create client!</button>
+</form>
