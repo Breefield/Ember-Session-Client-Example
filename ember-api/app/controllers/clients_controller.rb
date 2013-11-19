@@ -1,15 +1,9 @@
 class ClientsController < ApplicationController
   def index
-    @clients = Client.all
-    render json: @clients
+    render json: {client: Client.find(1)}
   end
 
-  def create
-    @client = Client.new params[:client]
-    if @client.save
-      render json: @client
-    else
-      render json: {error: @client.errors}
-    end
-  end
+  # def show
+    # render json: {client: Client.find(params[:id])}
+  # end
 end
