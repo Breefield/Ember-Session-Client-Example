@@ -1,5 +1,5 @@
 var ClientModel = DS.Model.extend({
-  name: DS.attr('string'),
+  subdomain: DS.attr('string'),
   key: DS.attr('string')
 });
 
